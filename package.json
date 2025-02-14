@@ -1,0 +1,38 @@
+{
+  "name": "hospital_backend",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --timeout 500 --exit",
+    "test1": "mocha create_doctor_test.js --timeout 50000 --exit",
+    "test2": "mocha create_patient_test.js --timeout 10000 --exit",
+    "test3": "mocha  patient_login_test.js --timeout 10000 --exit",
+    "test_gemini": "mocha  gemini_test.js --timeout 10000 --exit"
+  },
+  "dependencies": {
+    "@google/generative-ai": "^0.21.0",
+    "axios": "^1.7.9",
+    "bcrypt": "^5.1.1",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "i": "^0.3.7",
+    "install": "^0.13.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongo": "^0.1.0",
+    "mongodb": "^6.13.0",
+    "mongoose": "^8.10.0",
+    "npm-track": "^0.2.1"
+  },
+  "devDependencies": {
+    "chai": "^5.1.2",
+    "chai-http": "^5.1.1",
+    "mocha": "^11.1.0",
+    "supertest": "^7.0.0"
+  }
+}
