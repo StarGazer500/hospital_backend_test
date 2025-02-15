@@ -17,7 +17,7 @@ describe('API Test', () => {
         process.env.NODE_ENV = 'test';
         
         try {
-            await mongoose.connect(process.env.connection_string, {
+            await mongoose.connect(process.env.CONNECTION_STRING, {
               
             });
             console.log('Test database connected');
