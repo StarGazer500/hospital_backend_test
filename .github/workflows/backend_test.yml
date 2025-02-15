@@ -23,6 +23,16 @@ jobs:
         run: npm ci
 
       - name: Run tests
+
+        env:
+          ACCESS_TOKEN_SECRET: ${{ secrets.ACCESS_TOKEN_SECRET }}
+          API_KEY: ${{ secrets.API_KEY }}
+          CLIENT_URL: ${{ secrets.CLIENT_URL }}
+          CONNECTION_STRING: ${{ secrets.CONNECTION_STRING }}
+          MONGO_INITDB_HOSPITAL_PASSWORD: ${{ secrets.MONGO_INITDB_HOSPITAL_PASSWORD }}
+          MONGO_INITDB_HOSPITAL_USER: ${{ secrets.MONGO_INITDB_HOSPITAL_USER}}
+          REFRESH_TOKEN_SECRET: ${{ secrets.REFRESH_TOKEN_SECRET}}
+          
         run: |
           npm run test1
           npm run test2
